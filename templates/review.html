@@ -1,0 +1,41 @@
+    <h1><!DOCTYPE html>
+{% extends 'base.html' %}
+{% load static %}
+
+{%  block body_block %}
+     <title>Social Media Reviews</title>
+    <style>
+
+h1{
+    color: green;
+    text-align: center;
+}
+h2{
+    color: blue;
+}
+p{
+    font-family: Arial;
+}
+</style>
+<div class="container">
+    <div class="jumbotron">
+<h1><em>This is Result page!!!</em></h1><br>
+<h2>Random Forest Accuracy :{{ i }}</h2><br>
+<h2>Confusion Matrix For Random Forest:{{ j }}</h2><br>
+<h2>Decsion Tree Accuracy :{{ k }}</h2><br>
+<h2>Confusion Matrix For Random Forest:{{ l }}</h2><br><br><br>
+<h1>Decsion Tree</h1><br>
+<p><font size='6' color='black'> Decision trees are a type of model used for both classification and regression.
+   Trees answer sequential questions which send us down a certain route of the tree given the answer.
+   The model behaves with “if this than that” conditions ultimately yielding a specific result.</font> </p><br>
+   <p>_______________________________________</p>
+<h1>Random Forest</h1><br>
+<p><font size='6' color='black'>
+    Random forests or random decision forests are an ensemble learning method for classification,
+     regression and other tasks that operate by constructing a multitude of decision trees at 
+     training time and outputting the class that is the mode of the classes or mean prediction of the individual trees.</font> </p> 
+
+   <p><img src="{% static 'images/social.jpeg' %}" align="center"></p>
+    </div>
+    </div>
+{% endblock %}</h1>

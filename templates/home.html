@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body_block %}
+    <title>Social Media Reviews</title>
+    <title>classification</title>
+<style>
+
+
+h1{
+    color: green;
+    text-align: center;
+}
+h2{
+    color: blue;
+}
+p{
+    font-family: Arial;
+}
+</style>
+
+<div class="container">
+<div class="jumbotron">
+<h1>This is about the social media reviews!!</h1><br><br>
+          <img src="{% static 'images/twitter.gif' %}"><br><br>
+    <p>
+    Social media channels have become an essential part of digital marketing strategies.
+        Measuring the performance of those campaigns in a social media report can be painful.
+        It can be confusing to figure out which numbers matter, and which don’t.
+        What you should be presenting to your team, your clients, and your boss.
+        To continue being effective, you need to find what’s driving clicks, what’s creating engagement.
+        How that data compares to historical efforts. With that information, finding ways to improve your marketing strategy.
+    </p>
+</div>
+</div>
+{% endblock %}

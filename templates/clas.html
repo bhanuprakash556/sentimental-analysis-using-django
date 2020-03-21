@@ -1,0 +1,38 @@
+    <h1><!DOCTYPE html>
+{% extends 'base.html' %}<br>
+
+{% load static %}
+
+{%  block body_block %}
+     <title>Social Media Reviews</title>
+     
+    <style>
+
+h1{
+    color: green;
+    text-align: center;
+}
+h2{
+    color: blue;
+}
+p{
+    font-family: Arial;
+}
+</style>
+<html>
+<head>
+	<title>review prediction</title>
+</head>
+<body>
+<form action = "" method="POST">
+    {% csrf_token %}
+    
+ENTER COMMENT:<input type="text" name="num1">
+<button>Submit Review</button>
+<br><br>
+</form>
+</body>
+</html>
+
+
+{% endblock %}</h1>
